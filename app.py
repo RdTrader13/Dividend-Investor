@@ -200,7 +200,7 @@ if st.sidebar.button("Run Stock Analysis"):
 
     if results:
         # Sort results by combined score descending
-        results = sorted(results, key=x: x["Combined Score"], reverse=True)
+        results = sorted(results, key=lambda x: x["Combined Score"], reverse=True)
         
         st.subheader("📊 Stock Comparison & Rating Dashboard")
         table_data = [{
